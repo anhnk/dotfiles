@@ -1,0 +1,48 @@
+be:
+  command: bundle exec
+bec:
+  command: RAILS_ENV=cucumber bundle exec cucumber
+ber:
+  command: bundle exec rake
+bndb:
+  command: bundle install && npm install && bundle exec rake db:migrate
+fm:
+  command: bundle exec foreman start
+g:
+  command: git
+ga:
+  command: git add
+gb:
+  command: git branch
+gc:
+  command: git commit
+gco:
+  command: git checkout
+gd:
+  command: git diff
+gdc:
+  command: git diff --cached
+gl:
+  command: git log --name-status
+gls:
+  command: git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+gpl:
+  command: git pull --rebase
+gps:
+  command: git push
+gpsu:
+  command: git push -u origin HEAD
+gs:
+  command: git status -s
+gsa:
+  command: git stash apply
+gsl:
+  command: git stash list
+gsp:
+  command: git stash pop
+gss:
+  command: git stash save
+ll:
+  command: ls -alG
+wip:
+  command: git commit -am WIP
