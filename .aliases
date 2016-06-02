@@ -44,5 +44,7 @@ gss:
   command: git stash save
 ll:
   command: ls -alG
+v:
+  command: docker run -v "${PWD}":/app -ti --rm sebglazebrook/my-neovim nvim
 wip:
   command: git commit -am WIP
