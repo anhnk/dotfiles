@@ -1,3 +1,5 @@
+b:
+  command: bundle
 be:
   command: bundle exec
 bec:
