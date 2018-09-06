@@ -4,6 +4,7 @@ call plug#begin()
 Plug 'lifepillar/vim-solarized8'
 Plug 'Numkil/ag.nvim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'jiangmiao/auto-pairs' " insert or delete brackets, parens, quotes in pair
 
 call plug#end()
 
