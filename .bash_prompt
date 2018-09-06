@@ -59,6 +59,10 @@ prompt_git() {
 	fi;
 }
 
+kube_context() {
+  echo "kube-$(kubectl config current-context)"
+}
+
 rvm_version() {
   local gemset=$(echo $GEM_HOME | awk -F'@' '{print $2}')
   [ "$gemset" != "" ] && gemset="@$gemset"
@@ -113,9 +117,11 @@ else
 fi;
 
 # Set the terminal title to the current working directory.
-PS1="\[\033]0;\w\007\]";
+PS1="\n";
+PS1+="\[\033]0;\w\007\]";
 PS1+="\[${bold}\]";
 PS1+="\t "; # time
+PS1+="\[${red}\](\$(kube_context)) "; # kubernetes context
 PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[${white}\] at ";
 PS1+="\[${hostStyle}\]\h"; # host
