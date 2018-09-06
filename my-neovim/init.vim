@@ -4,7 +4,6 @@ call plug#begin()
 Plug 'lifepillar/vim-solarized8'
 Plug 'Numkil/ag.nvim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'vim-scripts/vim-auto-save'
 
 call plug#end()
 
@@ -30,5 +29,3 @@ autocmd BufWritePre * %s/\s\+$//e
 
 """ Plugin config
 " Autosave
-let g:auto_save = 1
-let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
