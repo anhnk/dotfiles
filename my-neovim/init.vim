@@ -5,6 +5,7 @@ Plug 'lifepillar/vim-solarized8'
 Plug 'Numkil/ag.nvim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'jiangmiao/auto-pairs' " insert or delete brackets, parens, quotes in pair
+Plug 'airblade/vim-gitgutter' " shows git diff in the gutter
 
 call plug#end()
 
@@ -35,4 +36,5 @@ autocmd BufWritePre * %s/\s\+$//e
 
 
 """ Plugin config
-" Autosave
+" vim-gitgutter
+set updatetime=100
