@@ -6,6 +6,7 @@ Plug 'Numkil/ag.nvim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'jiangmiao/auto-pairs' " insert or delete brackets, parens, quotes in pair
 Plug 'airblade/vim-gitgutter' " shows git diff in the gutter
+Plug 'sheerun/vim-polyglot' " A solid language pack
 
 call plug#end()
 
