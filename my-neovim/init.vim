@@ -11,7 +11,7 @@ call plug#end()
 
 
 """ Theme
-syntax on
+syntax enable
 set background=dark
 colorscheme solarized8_high
 
