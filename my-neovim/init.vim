@@ -7,6 +7,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'jiangmiao/auto-pairs' " insert or delete brackets, parens, quotes in pair
 Plug 'airblade/vim-gitgutter' " shows git diff in the gutter
 Plug 'sheerun/vim-polyglot' " A solid language pack
+Plug 'scrooloose/nerdtree' " A tree explorer plugin for vim
 
 call plug#end()
 
@@ -25,6 +26,8 @@ set number " turn on line numbers
 set nowrap " don't wrap lines that go over a screens width
 set cursorline " highlight the line the cursor is on
 set tabstop=2 shiftwidth=2 softtabstop=2 expandtab smarttab autoindent
+set wrap lbr " wrap long lines
+set termguicolors " full-color support
 
 " Folding
 set foldmethod=indent   "fold based on indent
