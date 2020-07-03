@@ -28,6 +28,7 @@ set cursorline " highlight the line the cursor is on
 set tabstop=2 shiftwidth=2 softtabstop=2 expandtab smarttab autoindent
 set wrap lbr " wrap long lines
 set termguicolors " full-color support
+set mouse=a " enable mouse
 
 " Folding
 set foldmethod=indent   "fold based on indent
