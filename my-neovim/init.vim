@@ -14,6 +14,7 @@ call plug#end()
 
 """ Theme
 syntax enable
+set termguicolors " full-color support
 set background=dark
 colorscheme solarized8_high
 
@@ -27,7 +28,6 @@ set nowrap " don't wrap lines that go over a screens width
 set cursorline " highlight the line the cursor is on
 set tabstop=2 shiftwidth=2 softtabstop=2 expandtab smarttab autoindent
 set wrap lbr " wrap long lines
-set termguicolors " full-color support
 set mouse=a " enable mouse
 
 " Folding
